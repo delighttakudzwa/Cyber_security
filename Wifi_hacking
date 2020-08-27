@@ -1,0 +1,28 @@
+Ethical Hacking Cheet Sheet 
+
+What is Ethical Hacking 
+Why Ethical Hacking
+Types of Hackers
+Setting up your Lab
+Linux Basics
+Networking Hacking
+-	Changed Mac Address: NB: check out how you make you mac address not to revert to the original after changing it 
+-	1. Disable the interface=> ifconfig wlan0 down NB: wlan0 represents the name of the interface, you use the ifconfig command to check the available interfaces/ network cards/adapters
+-	 2. Change the mac Adress=> ifconfig wlan0 hw ether (the new mark address)
+-	3. Enable the enterface=> ifconfig wlan up
+
+Configuring your interface/network card into monitor mode: NB not all wireless adapters support monitor mode
+-	Iwconfig== it will only list wireless cards/interfaces
+-	Ifconfig wlan0 down
+-	Airmon-ng check kill
+-	Iwconfig wlan0 mode monitor
+-	Ifconfig wlan0 up
+
+Using AIRODUMP-NG (part of the aircrack-ng suit): NB take note of what it shows , thus information gathering
+-	Airodump-ng (networkinterface)
+
+Wifi Bands
+-even if your network adapter supports 5 ghz you have to specify
+- airodump-ng –-band a (my network adapter/wireless interfac in monitor mode)
+- multiple bands using the band argument=> airodump-ng –band abg (wireless interface)
+Web Hacking 
