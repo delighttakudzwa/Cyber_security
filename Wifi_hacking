@@ -24,5 +24,5 @@ Using AIRODUMP-NG (part of the aircrack-ng suit): NB take note of what it shows 
 Wifi Bands
 -even if your network adapter supports 5 ghz you have to specify
 - airodump-ng –-band a (my network adapter/wireless interfac in monitor mode)
-- multiple bands using the band argument=> airodump-ng –band abg (wireless interface)
+- multiple bands using the band argument=> airodump-ng –band abg(wireless interface)
 Web Hacking 
